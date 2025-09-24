@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Form</title> 
 <link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js" defer></script>
 </head>
 <body>
 
+<div class="container">
 <h2>Contact Us</h2>
-<form id="myForm" action="https://formsubmit.co/bro2013123@gmail.com" method="POST" class="container">
+
+<form action="https://formsubmit.co/bro2013123@gmail.com" method="POST">
   <label for="name">Name</label>
   <input type="text" id="name" name="name" placeholder="Please enter your nickname" required>
   
@@ -34,9 +34,7 @@
   <button type="submit">Submit</button>
   <input type="hidden" name="_next" value="ty.html">
 </form>
-<canvas id="leaderboardChart" style="position:fixed; top:10px; right:10px; width:300px; height:200px; background:#fff; border-radius:10px; padding:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);"></canvas>
+</div>
 
 </body>
 </html>
-
-
