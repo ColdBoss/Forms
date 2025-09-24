@@ -2,45 +2,41 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title> 
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<title>A form</title> 
+<script src="script.js" defer></script>
 </head>
 <body>
 
-<h2>contact us</h2>
-<form action="https://formsubmit.co/bro2013123@gmail.com" method="POST">
-<label for="name">Name</label>
-  <input type="text" id="name" placeholder="Please enter your nickname"required>
+<h2>Contact Us</h2>
+
+<form id="myForm" action="https://formsubmit.co/bro2013123@gmail.com" method="POST">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Please enter your nickname" required>
   
   <label for="email">Email address:</label>
-<input type="text" id="name" name="email" placeholder="Enter your email">
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-<label for="phone">Phone number:</label>
-<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+  <label for="phone">Phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
 
-<label for="message">Message</label>
-<textarea id ="message" name="message" rows="4" placeholder="Write your message here"></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4" placeholder="Write your message here"></textarea>
 
-<label for="gender">Gender</label>
-<select id="gender" name="gender">
-<option value="male">male</option>
-<option value="female">female</option>
-<option value="other">Other</option>
-</select>
+  <label for="gender">Gender</label>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
 
-<button type="submit">Submit</button>
-<input type="hidden" name="_next" value="ty.html>
-
+  <button type="submit">Submit</button>
+  <input type="hidden" name="_next" value="ty.html">
 </form>
+
 <canvas id="leaderboardChart" style="position:fixed; top:10px; right:10px; width:300px; height:200px; background:#fff; border-radius:10px; padding:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);"></canvas>
-  </body>
+
+</body>
 </html>
-
-
-
-
-</html>
-
-
