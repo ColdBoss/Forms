@@ -30,11 +30,10 @@ let chart = new Chart(ctx, {
         }
     }
 });
-
+setTimeout(() => form.submit(), 50);
 
 form.addEventListener('submit', e => {
-    e.preventDefault(); // prevent actual submission to test leaderboard
-
+   
     const name = nameInput.value.trim();
     if (!name) return;
 
